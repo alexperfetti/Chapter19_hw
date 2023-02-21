@@ -1,63 +1,42 @@
-body{
-  font-family: "Arial", sans-serif;
-  font-size: 14px;
-  color:#fff;
-  background: #333;
+/* Style the navigation menu */
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+  position: relative;
 }
 
-a{
-  color: #fff;
+/* Hide the links inside the navigation menu (except for logo/home) */
+.topnav #myLinks {
+  display: none;
+}
+
+/* Style navigation menu links */
+.topnav a {
+  color: white;
+  padding: 14px 16px;
   text-decoration: none;
+  font-size: 17px;
+  display: block;
 }
 
-h1{
-  text-align: center;
+/* Style the hamburger menu */
+.topnav a.icon {
+  background: black;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
 }
 
-.container{
-  width: 540px;
-  margin: 40px auto;
-  overflow: auto;
+/* Add a grey background color on mouse-over */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
 }
 
-.slider-inner{
-  width:399px;
-  height: 225px;
-  position: relative;
-  overflow:hidden;
-  float:left;
-  padding: 3px;
-  border: #666 solid 1px;
-}
-
-.slider-inner img{
-  display:none;
-  width: 399px;
-  height: 225px;
-}
-
-.slider-inner img.active{
-  display:inline-block
-}
-
-.prev, .next{
-  float:left;
-  margin-top: 100px;
-  cursor: pointer;
-}
-
-.prev{
-  position: relative;
-  height: 30px;
-  width: 30px;
-  margin-right:-45px;
-  z-index:100;
-}
-
-.next{
-  position: relative;
-  height: 30px;
-  width: 30px;
-  margin-left:-45px;
-  z-index:100;
+/* Style the active link (or home/logo) */
+.active {
+  background-color: #081b57;
+  color: white;
+  height: 16.8px;
 }

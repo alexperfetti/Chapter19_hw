@@ -2,7 +2,9 @@
 <html>
     <head>
         <title> Case Studies</title>
+        <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
         <link href="./styles.css" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <script
         src="https://code.jquery.com/jquery-3.6.3.js"
         integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM="
@@ -11,18 +13,20 @@
         <script src="./19.js"></script>
     </head>
     <body>
-        <div class="container">
-            <h1>Case Studies</h1>
-            <div class="slider-outer">
-                <img src="./photos/square-caret-left-solid.svg" class="prev" alt="Prev">
-                <div class="slider-inner">
-                    <img src="./photos/WBAFS_devices 1.png" class="active">
-                    <img src="./photos/Northfield_devices 1.png">
-                    <img src="./photos/CSA_UX 1.png">
 
-                </div>
-                <img src="./photos/square-caret-right-solid.svg" class="next" alt="Next"
-          </div>
-        </div>
+<!-- Top Navigation Menu -->
+<div class="topnav">
+  <a href="#home" class="active"><img src="./photos/PerfettiLogo_rev.png" alt="Perfetti logo"></a>
+  <!-- Navigation links (hidden by default) -->
+  <div id="myLinks">
+    <a href="#news">About Me</a>
+    <a href="#contact">Case Studies</a>
+    <a href="#about">Contact Me</a>
+  </div>
+  <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
     </body>
 </html>
